@@ -1,0 +1,128 @@
+@import animationsKeyframes
+*
+    margin: 0
+    padding: 0
+body
+    background: #323232
+.containerMain
+    width: 80%
+    height: 2000px
+    backdrop-filter: blur(25px)
+    margin: 30px auto
+    border: solid 2px #F4E5C2
+    border-radius: 24px
+    display: flex
+    flex-direction: column
+    .headContainer
+        width: 100%
+        height: auto
+        display: grid
+        grid-template-columns: 1fr 1fr
+        grid-template-rows: 1fr
+        gap: 16px
+        .text
+            text-align: center
+            h2
+                margin: 100px auto
+                font-family: roboto, sans-serif
+                font-size: 32px
+                color: #F4E5C2
+                .wordRed
+                    color: #6DB193
+                    font-style: normal
+            button
+                padding: 16px 32px
+                background: transparent
+                border-radius: 10px
+                border: 2px solid #F4E5C2
+                color: #F4E5C2
+            button:hover
+                background: #6DB193
+                color: black
+                border:2px solid #6DB193
+        .img
+            svg
+                width: 100%
+                margin-top: 40px
+    .sobreMiContainer
+        width: 100%
+        height: 600px
+        margin-top: 200px
+        background: #fff
+        display: grid
+        grid-template-columns: 1fr 1fr
+        grid-template-rows: 1fr
+        .miPersona
+            background: red
+            margin: 16px
+            display: grid
+            grid-template-columns: 3fr 1fr
+            gap: 8px
+        .miTrabajo
+            background: blue
+            margin: 16px
+.circlesContainer
+    width: 100%
+    height: 100vh
+    position: absolute
+    .circle0
+        width: 84px
+        height: 84px
+        background: rgb(173,149,190)
+        background: linear-gradient(0deg, rgba(173,149,190,1) 0%, rgba(133,89,165,1) 29%, rgba(87,78,98,1) 79%)
+        border-radius: 50%
+        margin-left: 6%
+    .circleh2
+        width: 120px
+        height: 130px
+        border-radius: 50%
+        position: absolute
+    .circle1
+        background: rgb(173,149,190)
+        background: linear-gradient(0deg, rgba(173,149,190,1) 0%, rgba(133,89,165,1) 29%, rgba(87,78,98,1) 79%)
+        left: 18%
+        bottom: 68%
+        animation-name: animationCircle1
+        animation-duration: 2s
+        animation-direction: alternate
+        animation-iteration-count: infinite
+    .circle2
+        background: rgb(173,149,190)
+        background: linear-gradient(0deg, rgba(173,149,190,1) 0%, rgba(133,89,165,1) 29%, rgba(87,78,98,1) 79%)
+        left: 30%
+        bottom: 50%
+        animation-name: animationCircle2
+        animation-duration: 2s
+        animation-direction: alternate
+        animation-iteration-count: infinite
+    .circle3
+        background: rgb(173,149,190)
+        background: linear-gradient(0deg, rgba(173,149,190,1) 0%, rgba(133,89,165,1) 29%, rgba(87,78,98,1) 79%)
+        left: 18%
+        bottom: 54%
+        animation-name: animationCircle3
+        animation-duration: 2s
+        animation-direction: alternate
+        animation-iteration-count: infinite
+    .circle4
+        background: rgb(173,149,190)
+        background: linear-gradient(0deg, rgba(173,149,190,1) 0%, rgba(133,89,165,1) 29%, rgba(87,78,98,1) 79%)
+        left: 30%
+        bottom: 65%
+        animation-name: animationCircle4
+        animation-duration: 2s
+        animation-direction: alternate
+        animation-iteration-count: infinite
+    .circleBold
+        width: 360px
+        height: 360px
+        background: rgb(173,149,190)
+        background: linear-gradient(0deg, rgba(173,149,190,1) 0%, rgba(133,89,165,1) 29%, rgba(87,78,98,1) 79%)
+        border-radius: 50%
+        position: absolute
+        left: 65%
+        bottom: 45%
+        animation-name: animationCircleBold
+        animation-duration: 3s
+        animation-direction: alternate
+        animation-iteration-count: infinite

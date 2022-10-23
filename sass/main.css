@@ -1,0 +1,190 @@
+@keyframes animationCircle1 {
+  0% {
+    transform: translateX(0%) scale(1.5);
+  }
+  100% {
+    transform: translateY(-60%) translateX(-55%);
+  }
+}
+@keyframes animationCircle2 {
+  0% {
+    transform: translateX(0%) scale(1.5);
+  }
+  100% {
+    transform: translateY(70%) translateX(70%);
+  }
+}
+@keyframes animationCircle3 {
+  0% {
+    transform: translateX(0%) scale(1.5);
+  }
+  100% {
+    transform: translateY(70%) translateX(-70%);
+  }
+}
+@keyframes animationCircle4 {
+  0% {
+    transform: translateX(0%) scale(1.5);
+  }
+  100% {
+    transform: translateY(-70%) translateX(70%);
+  }
+}
+@keyframes animationCircleBold {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #323232;
+}
+
+.containerMain {
+  width: 80%;
+  height: 2000px;
+  backdrop-filter: blur(25px);
+  margin: 30px auto;
+  border: solid 2px #F4E5C2;
+  border-radius: 24px;
+  display: flex;
+  flex-direction: column;
+}
+.containerMain .headContainer {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 16px;
+}
+.containerMain .headContainer .text {
+  text-align: center;
+}
+.containerMain .headContainer .text h2 {
+  margin: 100px auto;
+  font-family: roboto, sans-serif;
+  font-size: 32px;
+  color: #F4E5C2;
+}
+.containerMain .headContainer .text h2 .wordRed {
+  color: #6DB193;
+  font-style: normal;
+}
+.containerMain .headContainer .text button {
+  padding: 16px 32px;
+  background: transparent;
+  border-radius: 10px;
+  border: 2px solid #F4E5C2;
+  color: #F4E5C2;
+}
+.containerMain .headContainer .text button:hover {
+  background: #6DB193;
+  color: black;
+  border: 2px solid #6DB193;
+}
+.containerMain .headContainer .img svg {
+  width: 100%;
+  margin-top: 40px;
+}
+.containerMain .sobreMiContainer {
+  width: 100%;
+  height: 600px;
+  margin-top: 200px;
+  background: #fff;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+.containerMain .sobreMiContainer .miPersona {
+  background: red;
+  margin: 16px;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 8px;
+}
+.containerMain .sobreMiContainer .miTrabajo {
+  background: blue;
+  margin: 16px;
+}
+
+.circlesContainer {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+}
+.circlesContainer .circle0 {
+  width: 84px;
+  height: 84px;
+  background: rgb(173, 149, 190);
+  background: linear-gradient(0deg, rgb(173, 149, 190) 0%, rgb(133, 89, 165) 29%, rgb(87, 78, 98) 79%);
+  border-radius: 50%;
+  margin-left: 6%;
+}
+.circlesContainer .circleh2 {
+  width: 120px;
+  height: 130px;
+  border-radius: 50%;
+  position: absolute;
+}
+.circlesContainer .circle1 {
+  background: rgb(173, 149, 190);
+  background: linear-gradient(0deg, rgb(173, 149, 190) 0%, rgb(133, 89, 165) 29%, rgb(87, 78, 98) 79%);
+  left: 18%;
+  bottom: 68%;
+  animation-name: animationCircle1;
+  animation-duration: 2s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+.circlesContainer .circle2 {
+  background: rgb(173, 149, 190);
+  background: linear-gradient(0deg, rgb(173, 149, 190) 0%, rgb(133, 89, 165) 29%, rgb(87, 78, 98) 79%);
+  left: 30%;
+  bottom: 50%;
+  animation-name: animationCircle2;
+  animation-duration: 2s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+.circlesContainer .circle3 {
+  background: rgb(173, 149, 190);
+  background: linear-gradient(0deg, rgb(173, 149, 190) 0%, rgb(133, 89, 165) 29%, rgb(87, 78, 98) 79%);
+  left: 18%;
+  bottom: 54%;
+  animation-name: animationCircle3;
+  animation-duration: 2s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+.circlesContainer .circle4 {
+  background: rgb(173, 149, 190);
+  background: linear-gradient(0deg, rgb(173, 149, 190) 0%, rgb(133, 89, 165) 29%, rgb(87, 78, 98) 79%);
+  left: 30%;
+  bottom: 65%;
+  animation-name: animationCircle4;
+  animation-duration: 2s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+.circlesContainer .circleBold {
+  width: 360px;
+  height: 360px;
+  background: rgb(173, 149, 190);
+  background: linear-gradient(0deg, rgb(173, 149, 190) 0%, rgb(133, 89, 165) 29%, rgb(87, 78, 98) 79%);
+  border-radius: 50%;
+  position: absolute;
+  left: 65%;
+  bottom: 45%;
+  animation-name: animationCircleBold;
+  animation-duration: 3s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}/*# sourceMappingURL=main.css.map */
