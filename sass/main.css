@@ -70,8 +70,9 @@ body {
 }
 .containerMain .headContainer .text h2 {
   margin: 100px auto;
-  font-family: roboto, sans-serif;
-  font-size: 32px;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 4rem;
+  font-weight: 700;
   color: #F4E5C2;
 }
 .containerMain .headContainer .text h2 .wordRed {
@@ -79,6 +80,7 @@ body {
   font-style: normal;
 }
 .containerMain .headContainer .text button {
+  margin: 0 auto;
   padding: 16px 32px;
   background: transparent;
   border-radius: 10px;
@@ -98,21 +100,218 @@ body {
   width: 100%;
   height: 600px;
   margin-top: 200px;
-  background: #fff;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
 }
 .containerMain .sobreMiContainer .miPersona {
-  background: red;
   margin: 16px;
-  display: grid;
-  grid-template-columns: 3fr 1fr;
-  gap: 8px;
+}
+.containerMain .sobreMiContainer .miPersona .perfilImg {
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/perfilDiego.jpg);
+  background-size: cover;
+  border: 2px solid #F4E5C2;
+  border-radius: 20px;
 }
 .containerMain .sobreMiContainer .miTrabajo {
-  background: blue;
+  backdrop-filter: blur(25px);
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  border: 2px solid #F4E5C2;
   margin: 16px;
+  padding: 16px;
+}
+.containerMain .sobreMiContainer .miTrabajo .texto {
+  width: 100%;
+  height: 40%;
+}
+.containerMain .sobreMiContainer .miTrabajo .texto h2 {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.containerMain .sobreMiContainer .miTrabajo .texto p {
+  font-family: sans-serif;
+}
+.containerMain .sobreMiContainer .miTrabajo .tecnologias {
+  width: 100%;
+  height: 60%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.containerMain .sobreMiContainer .miTrabajo .tecnologias h3 {
+  font-family: "Lato";
+}
+.containerMain .sobreMiContainer .miTrabajo .tecnologias .tecnologiaContenedor {
+  width: 60%;
+  border: 2px solid #F4E5C2;
+  border-radius: 10px;
+  margin: 4px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.2);
+}
+.containerMain .sobreMiContainer .miTrabajo .tecnologias .tecnologiaContenedor p {
+  font-family: sans-serif;
+}
+.containerMain .sobreMiContainer .miTrabajo .tecnologias .tecnologiaContenedor:hover {
+  border: 2px solid #6DB193;
+  background: #6DB193;
+}
+.containerMain .sobreMiContainer .miTrabajo .tecnologias .tecFe {
+  grid-column: 1/5;
+  grid-row: 1/2;
+  text-align: center;
+}
+.containerMain .sobreMiContainer .miTrabajo .tecnologias .p1 {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+.containerMain .sobreMiContainer .miTrabajo .tecnologias .p2 {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+.containerMain .sobreMiContainer .miTrabajo .tecnologias .p3 {
+  grid-column: 3/5;
+  grid-row: 2/3;
+}
+.containerMain .sobreMiContainer .miTrabajo .tecnologias .p4 {
+  grid-column: 1/2;
+  grid-row: 3/4;
+}
+.containerMain .sobreMiContainer .miTrabajo .tecnologias .p5 {
+  grid-column: 2/3;
+  grid-row: 3/4;
+}
+.containerMain .sobreMiContainer .miTrabajo .tecnologias .p6 {
+  grid-column: 3/5;
+  grid-row: 3/4;
+}
+.containerMain .sobreMiContainer .miTrabajo .tecnologias .p7 {
+  grid-column: 1/2;
+  grid-row: 4/5;
+}
+.containerMain .sobreMiContainer .miTrabajo .tecnologias .p8 {
+  grid-column: 2/3;
+  grid-row: 4/5;
+}
+.containerMain .sobreMiContainer .miTrabajo .tecnologias .p9 {
+  grid-column: 3/5;
+  grid-row: 4/5;
+}
+.containerMain .sobreMiContainer .miTrabajo .tecnologias .tecBe {
+  grid-column: 5/-5;
+  grid-row: 5/6;
+  text-align: center;
+  margin-top: 10px;
+}
+.containerMain .sobreMiContainer .miTrabajo .tecnologias .p01 {
+  grid-column: -4/-3;
+  grid-row: 6/7;
+}
+.containerMain .sobreMiContainer .miTrabajo .tecnologias .p02 {
+  grid-column: 2/3;
+  grid-row: 6/7;
+}
+.containerMain .sobreMiContainer .miTrabajo .tecnologias .p03 {
+  grid-column: 3/5;
+  grid-row: 6/7;
+}
+.containerMain .sobreMiContainer .miTrabajo .tecnologias .p04 {
+  grid-column: -3/-4;
+  grid-row: 7/8;
+}
+.containerMain .sobreMiContainer .miTrabajo .tecnologias .p05 {
+  grid-column: 2/3;
+  grid-row: 7/8;
+}
+.containerMain .sobreMiContainer .miTrabajo .tecnologias .p06 {
+  grid-column: 3/5;
+  grid-row: 7/8;
+}
+.containerMain .sobreMiContainer .miTrabajo .tecnologias .p07 {
+  grid-column: 2/-4;
+  grid-row: 8/9;
+}
+.containerMain .sobreMiContainer .miTrabajo .tecnologias .p08 {
+  grid-column: 2/3;
+  grid-row: 8/9;
+}
+.containerMain .sobreMiContainer .miTrabajo .tecnologias .p09 {
+  grid-column: 3/5;
+  grid-row: 8/9;
+}
+.containerMain .proyectosContainer {
+  width: auto;
+  height: 600px;
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 32px;
+  padding: 32px;
+}
+.containerMain .proyectosContainer .proyectoContenedor {
+  width: 100%;
+  background: rgba(136, 136, 136, 0.258);
+  backdrop-filter: blur(25px);
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 8px;
+  padding: 8px;
+}
+.containerMain .proyectosContainer .proyecto1 .imgUp {
+  grid-columns: 1/2;
+  grid-row: 1/2;
+  background: #fff;
+  border-radius: 10px;
+}
+.containerMain .proyectosContainer .proyecto1 .imgDown {
+  grid-column: 2/3;
+  grid-row: -2/-1;
+  background: #fff;
+  border-radius: 10px;
+}
+.containerMain .proyectosContainer .proyecto1 .tecnologiasUp {
+  grid-column: 2/3;
+  grid-row: -3/-2;
+  background: rgba(134, 134, 134, 0.4);
+  border-radius: 10px;
+}
+.containerMain .proyectosContainer .proyecto1 .tecnologiasDown {
+  grid-column: 2/-3;
+  grid-row: 2/3;
+  background: rgba(134, 134, 134, 0.4);
+  border-radius: 10px;
+}
+.containerMain .proyectosContainer .proyecto1 .imgUp,
+.containerMain .proyectosContainer .proyecto1 .imgDown {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.containerMain .proyectosContainer .proyecto1 .imgUp a,
+.containerMain .proyectosContainer .proyecto1 .imgDown a {
+  display: none;
+  text-decoration: none;
+  font-family: "Nunito Sans";
+}
+.containerMain .proyectosContainer .proyecto1 .imgUp:hover,
+.containerMain .proyectosContainer .proyecto1 .imgDown:hover {
+  background: #6DB193;
+  display: flex;
+}
+.containerMain .proyectosContainer .proyecto1 .imgUp:hover a,
+.containerMain .proyectosContainer .proyecto1 .imgDown:hover a {
+  display: inline;
 }
 
 .circlesContainer {
